@@ -1,0 +1,86 @@
+I have a budget tracker project that is already working.  
+I want to upgrade and improve it with the following detailed changes:  
+
+---
+
+### 1. Remove unnecessary options
+- In the **Settings page**, remove the "About" option completely.  
+- Also remove any mention of "Fully Offline" because I plan to run ads, and showing this will make users turn off the internet.
+
+---
+
+### 2. Category grouping and totals
+- Currently, when I add multiple transactions under the same category (for example, "Shopping"), they all save as separate entries.  
+- Keep these **individual entries visible** (with date and amount), but also **calculate and display the total for that category**.  
+
+**Example:**  
+- Entry 1: Shopping → ₹250 (20/08/2025)  
+- Entry 2: Shopping → ₹150 (20/08/2025)  
+
+Both entries should still be visible individually, but above/below them show:  
+👉 "Total Shopping: ₹400"  
+
+- This should work for **every category** (Food, Bills, Travel, etc.).  
+
+---
+
+### 3. Filters
+- In the filters section, when I click a category (e.g., Shopping), I should only see:  
+  - All entries related to Shopping (with date + amount).  
+  - At the bottom/top of this filtered list, show the **total spent on Shopping**.  
+- Apply the same logic for Food, Bills, Travel, and any other categories.  
+
+---
+
+### 4. PDF Export improvements
+- Currently, the PDF export only shows:  
+  - Total Income  
+  - Total Expenses  
+  - Balance  
+
+- I need the PDF export to also include a **clear breakdown of each category**:  
+  - Category name  
+  - Each entry (date + amount)  
+  - Total for that category  
+
+**Example (in PDF):**  
+
+Shopping  
+- 20/08/2025 → ₹250  
+- 20/08/2025 → ₹150  
+Total Shopping: ₹400  
+
+Food  
+- 21/08/2025 → ₹200  
+Total Food: ₹200  
+
+At the bottom of the PDF, still show:  
+👉 Total Income, Total Expenses, Balance.  
+
+---
+
+### 5. Responsive design
+- Make the project fully **mobile-friendly**.  
+- On small screens, show transactions in a **single column layout** for better readability.  
+- Adjust fonts, spacing, and buttons so that it looks clean on both desktop and mobile.  
+- The floating action button (for adding a new transaction) should not overlap with content on smaller screens.  
+
+---
+
+### 6. Keep existing functionality
+- Do **not break any current features**.  
+- Existing add/edit/delete transaction features should continue to work.  
+- The database/storage logic should remain the same, only extend it for totals and category grouping.  
+
+---
+
+### 7. (Optional but recommended improvements)
+- Add a **category summary page or chart** (Pie Chart or Bar Chart) to quickly visualize how much money was spent in each category this month.  
+- Allow export to **CSV/Excel** in addition to PDF.  
+- Add a **monthly view**: users can pick a month and see totals for each category in that month.  
+
+---
+
+Please implement these improvements carefully.  
+Do not remove any existing code or break the app’s flow.  
+Just extend it with these new features and design improvements.
